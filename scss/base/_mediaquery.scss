@@ -1,0 +1,125 @@
+@media (max-width: 768px) {
+    // Estilos para dispositivos móviles
+    // ...
+
+    .imagen-testimonios {
+        margin-top: 3% !important;
+    }
+
+    .restauramos {
+        margin-bottom: 6% !important;
+    }
+
+    .amarrr {
+        margin-bottom: 5% !important;
+    }
+
+    .textoheader {
+        margin-left: 3% !important;
+    }
+
+    .navbar-toggler {
+        margin-right: 4% !important;
+    }
+
+    .mediacel {
+        margin-bottom: 5% !important;
+    }
+
+    .testimonial-img {
+        width: 200px !important;
+        height: 150px !important;
+        object-fit: cover !important;
+        margin-bottom: 30px !important;
+    }
+
+    .bg-transparent {
+        &.testimonios {
+            &.celular {
+                margin-bottom: 25px !important;
+            }
+        }
+    }
+
+    .img-fluid {
+        &.amarrr {
+            width: 250px !important; 
+            height: 150px !important;
+         }
+    }
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    // Estilos para tabletas
+    // ...
+
+    .restauramos {
+        margin-bottom: 3% !important;
+    }
+
+    .textoheader {
+        margin-left: 3% !important;
+    }
+
+    .navbar-toggler {
+        margin-right: 4% !important;
+    }
+
+
+    .bg-transparent {
+        &.testimoniostablet {
+            margin-bottom: 35px !important;
+        }
+
+    }
+    .testimonial-img {
+        width: 200px !important;
+        height: 150px !important;
+        object-fit: cover !important;
+        margin-bottom: 30px !important;
+    }
+
+    .img-fluid {
+        &.amarrr {
+            margin-bottom: 25px !important;
+            margin-top: 10px !important;
+            width: 430px !important; 
+            height: 230px !important;
+         }
+    }
+}
+
+
+@media (min-width: 1025px) {
+    // Estilos para pantallas grandes
+    // ...
+
+    .restauramos {
+        margin-bottom: 3% !important;
+    }
+
+    .textoheader {
+        margin-left: 1% !important;
+    }
+
+    .testimonial-img {
+        width: 200px !important;
+        height: 150px !important;
+        object-fit: cover !important;
+        margin-bottom: 30px !important;
+    }
+
+    .card-text {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #000000;
+        margin-bottom: -5px !important;
+
+        &.testimonios {
+            color: rgba(226, 226, 226, 0.699);
+        }
+    }
+}

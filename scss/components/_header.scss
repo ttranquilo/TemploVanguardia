@@ -1,0 +1,39 @@
+@import "../utilities/variables";
+
+header {
+  background-color: $primary-color;
+  color: white;
+  text-align: center;
+  padding: 5em 0;
+
+  h1 {
+    font-family: $font-family;
+    font-size: 3em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+}
+
+
+.bg-transparent {
+    background: linear-gradient(to bottom, #000000c5, #00000002);
+}
+
+.textoheader {
+    color: $primary-color !important;
+    text-decoration: none !important;
+    font-family: $font-family;
+    font-size: 25px !important;
+}
+
+.navbar-nav {
+  .nav-item {
+    .nav-link {
+      &:hover {
+        color: #8d29fffd !important; /* Cambia el color al que desees */
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@import "../utilities/variables";
+
+footer {
+  background-color: $primary-color;
+  color: white;
+  text-align: center;
+  padding: 2em;
+
+  h2 {
+    font-family: $font-family;
+    font-size: 2em;
+  }
+
+  .form-group {
+    margin-bottom: 1em;
+
+    label {
+      font-size: 1.2em;
+    }
+
+    input, textarea {
+      font-size: 1em;
+    }
+  }
+
+  button {
+    font-size: 1.2em;
+    background-color: white;
+    color: $primary-color;
+  }
+}
+
+
+.col-md-4 {
+  h4 {
+    color: #FFFFFF; /* Cambia el color al que desees */
+  }
+
+  ul {
+    li {
+      a {
+        color: #FFFFFF; /* Cambia el color al que desees */
+        transition: color 0.3s; /* Agrega una transición suave de color al pasar el cursor */
+
+        &:hover {
+          color: #8d29fffd !important; /* Cambia el color al que desees al pasar el cursor */
+        }
+      }
+    }
+  }
+}
+
+.footer2023 {
+  font-family: $font-family-titl !important;
+  font-size: 33px !important;
+}

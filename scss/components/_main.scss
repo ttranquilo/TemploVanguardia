@@ -1,0 +1,290 @@
+@import "../utilities/variables";
+
+main {
+    font-family: $font-family;
+    color: $primary-color;
+    padding: 2em;
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p,
+    a {
+        font-size: 1.2em;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .card {
+        background-color: #f8f9fa;
+        color: $primary-color;
+
+        h5 {
+            font-size: 1.5em;
+        }
+
+        p {
+            font-size: 1em;
+        }
+    }
+}
+
+.theme-dark {
+    color: $white-text;
+    background-image: $body-background;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+
+    a {
+        color: $white-text;
+        text-decoration: underline;
+    }
+
+    // Agregamos un resplandor blanco a los bordes del texto
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a {
+        text-shadow: 0 0 10px $white-glow;
+    }
+
+    // Hacemos que las imágenes sean un poco más oscuras para que encajen mejor en el tema oscuro
+    img {
+        filter: brightness(80%);
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.76);
+    }
+
+    // Aseguramos que el contenido del cuerpo esté por encima del pseudo-elemento oscurecedor
+    >* {
+        position: relative;
+    }
+}
+
+.amarres {
+    border-color: #ffffff !important;
+}
+
+.amarrr {
+    border-radius: 50px !important;
+}
+
+.colorheader {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.fondolindo {
+    background-color: #ffffff2d;
+}
+
+.navbar-toggler {
+    color: #ffff !important;
+}
+
+
+.rating {
+    display: inline-block;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    margin-top: -120px !important;
+    padding-bottom: 30px;
+    font-size: 35px;
+}
+
+.rating span.star {
+    color: $star-color;
+    display: inline-block;
+    position: relative;
+    margin-left: 19px;
+
+    &:before {
+        content: '\2605';
+        position: absolute;
+    }
+}
+
+
+.card-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+
+    &.testimonios {
+        color: rgba(226, 226, 226, 0.699);
+    }
+}
+
+.card-title {
+    color: #000000 !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+
+    &.testimonios {
+        color: rgba(226, 226, 226, 0.897) !important;
+    }
+}
+
+.testimonial-img {
+    border-radius: 25px !important;
+    border: 3px solid #3602257e;
+}
+
+.bg-transparent {
+    &.testimonios {
+        background: linear-gradient(to bottom, #3d00290c, #3d00297e) !important;
+        border: 3px solid #3d002954;
+        border-radius: 25px !important;
+    }
+
+    &.fondoamarre {
+        background: linear-gradient(to bottom, #3d00290c, #3d00297e) !important;
+        border: 3px solid #3d002954;
+        border-radius: 25px !important;
+    }
+
+    &.confiar {
+        background: linear-gradient(to bottom, #3d00290c, #3d00293f) !important;
+        border: 3px solid #3d002954;
+        border-radius: 25px !important;
+    }
+
+    &.confiarr {
+        background: linear-gradient(to bottom, #0000000c, #0000002c) !important;
+        border-radius: 25px !important;
+        margin-bottom: 80px !important;
+    }
+
+    &.preguntass {
+        background: linear-gradient(to bottom, #3d00293f, #3d00293f) !important;
+        border-radius: 25px !important;
+        margin-bottom: 10px !important;
+        color: #ffff !important;
+    }
+
+    &.preguntasss {
+        background: linear-gradient(to bottom, #3d00293f, #3d00293f) !important;
+        border-radius: 25px !important;
+        color: #ffff !important;
+    }
+
+    &.footerr {
+        background: linear-gradient(to bottom, #3d00293f, #3d00293f) !important;
+    }
+}
+
+.confiar {
+    color: #ffffffcc !important;
+    font-family: $font-family-desc;
+    font-size: 18px !important;
+
+    &.sep {
+        margin-bottom: 37px !important;
+    }
+
+    &.sepa {
+        margin-bottom: 57px !important;
+    }
+}
+
+.confiar2 {
+    color: #ffedf9e8 !important;
+    margin-bottom: 25px !important;
+    font-size: 43px !important;
+    font-family: $font-family-titl;
+}
+
+.confiar3 {
+    font-family: $font-family;
+    font-size: 56px !important;
+    color: #ffff !important;
+    margin-top: 35px !important;
+}
+
+.testiclientes {
+    font-family: $font-family;
+    font-size: 56px !important;
+    color: #ffff !important;
+}
+
+.botonwpprin {
+    background-color: #198754 !important;
+    text-decoration: none !important;
+    margin-top: 30px !important;
+    margin-bottom: -30px !important;
+
+    &:hover {
+        background-color: #17794b !important;  
+        color: #d8d8d8 !important;
+    }
+}
+
+.restauramos {
+    color: #ffedf9e8 !important;
+    margin-top: 15px !important;
+    font-size: 53px !important;
+    font-family: $font-family-titl;
+}
+
+.accordion-item {
+    background-color: #000000 !important;
+}
+
+
+.amarrecenter {
+    font-family: $font-family-desc;
+    font-size: 17px !important;
+}
+
+.amarrecenterr {
+    font-family: $font-family-titl2;
+    font-size: 22px !important;
+}
+
+.card-text.preview {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+
+  .card-text.expanded {
+    -webkit-line-clamp: initial;
+  }
+
+  .testimonio-expanded {
+    max-height: none;
+    overflow: visible;
+  }
+  
+  .testimonio-text-preview {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .testimonio-expanded .testimonio-text-preview {
+    display: none;
+  }
